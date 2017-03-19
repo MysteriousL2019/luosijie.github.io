@@ -94,17 +94,28 @@ ul.menu>li>a{
 	margin-top: 60px;
 }
 .main-content>ul>li{
-	height: 270px;
 	width: 33.3333%;
-	
 	float: left;
-	padding: 30px;
+	padding: 20px;
+	overflow: hidden;
+}
+.main-content>ul>li>a{
+	display: block;
+	color: #232323;
 }
 
 .item{
 	background: white;
 	width: 100%;
-	height: 100%;
 	border: 1px solid #eee;
 	border-radius: 4px;
+	overflow: hidden;
+	padding: 10px;
+}
+
+.item>img{
+	width: 100%;
+}
+.item>p{
+	line-height: 50px;
 }
