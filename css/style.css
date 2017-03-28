@@ -40,9 +40,13 @@ li{
 }
 
 ul.menu>li>a{
-	font-size: 18px;
-	color: white;
+	font-size: 16px;
+	color: rgba(255,255,255,0.6);
 	line-height: 50px;
+}
+
+a.active{
+	color: rgba(255,255,255,1)!important;
 }
 
 .contact{
@@ -118,4 +122,13 @@ ul.menu>li>a{
 }
 .item>p{
 	line-height: 50px;
+}
+
+.item .tag span{
+	display: inline-block;
+	border: 1px solid #e0e0e0;
+	padding: 3px 8px;
+	border-radius: 4px;
+	margin-bottom: 5px;
+	background: #f8f8f8;
 }
