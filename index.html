@@ -2,52 +2,89 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>JesseLuo</title>
-	<link rel="stylesheet" href="font-awesome-4.3.0/css/font-awesome.css">
+	<title>luosj</title>
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<div class="sidebar">
-		<div class="avatar">
-			<img src="img/photo.png" alt="photo">
-			<p>JesseLuo</p>
-		</div>
+	<header class="main-header">
+		<img src="img/logo.png" alt="骆" width="50" height="50">
 		<ul class="menu">
-			<li><a href="index.html" class="active">Demo</a></li>
-			<li><a href="dribbble.html">Drbbble</a></li>
-			<li><a href="https://github.com/luosijie/Front-end-Blog">Blog</a></li>
+			<li><a href="#summary">首页</a></li>
+			<li><a href="#works">作品</a></li>
+			<li><a href="#contact">联系</a></li>
+			<li class="resume">简历</li>
+			<div class="slide-block"></div>
 		</ul>
-		<div class="contact">
-			<p>Contact</p>
-			<ul>
-				<li>
-					<i class="fa fa-github"></i><a href="https://github.com/luosijie/luosijie.github.io">Github</a>
-				</li>
-				<li>
-					<i class="fa fa-dribbble"></i><a href="https://dribbble.com/luosj">Dribbble</a>
-				</li>
-			</ul>
+	</header>
+	<section class="summary" id="summary">
+	  <img src="img/photo.png" alt="">
+	  <h2>骆思杰</h2>
+	  <span class="sub-title">JesseLuo</span>
+	  <p>
+	    专注UI设计<br>
+      热衷于运用图形界面和前端技术提高用户体检<br>
+      热爱生活，喜欢运动
+    </p>	
+	</section>
+	<section class="works" id="works">
+		<div class="title">
+			作品
+			<p class="sub-title">works</p>
 		</div>
-	</div>
-	<div class="main">
-		<div class="main-title">
-			<span class="block"></span>
-			<span>Demo</span>
-		</div>
-		<div class="main-content">
-			<ul>
-				<li>
-					<a class="item" href="demo/rollingball.html">
-						<img src="img/cover/rolling ball.png" alt="">
-						<p>Rolling Ball</p>
-						<div class="tag">
-							<span>css3</span>
-							<span>html5</span>
+		<ul class="work-list">
+			<li>
+			  <a href="http://card.luosj.me" target="_blank">
+			  	<div class="content">
+				  	<img src="img/icon_card.png" alt="">
+						<div class="desc">
+							Card
+							<p class="sub-title">一个名片设计工具</p>
 						</div>
-					</a>
-				</li>
-			</ul>
+				  </div>
+			  </a>
+			</li>
+			<li>
+			  <a href="https://github.com/luosijie" target="_blank">
+			    <div class="content">
+				    <img src="img/icon_github.png" alt="">
+						<div class="desc">
+							Github
+							<p class="sub-title">我的一些前端代码</p>
+						</div>	
+				  </div>	
+			  </a>
+			</li>
+			<li>
+			  <a href="https://dribbble.com/luosj" target="_blank">
+			  	<div class="content">
+				    <img src="img/icon_dribbble.png" alt="">
+						<div class="desc">
+							Card
+							<p class="sub-title">我的一些设计作品</p>
+						</div>	
+				  </div>
+			  </a>
+			</li>
+		</ul>
+	</section>
+	<section class="contact" id="contact">
+	  <div class="title">
+			联系
+			<p class="sub-title">contact</p>
 		</div>
-	</div>
+		<div class="context">
+			<em>" 对不起，不约 "</em>
+			<p>Sorry, do not yue</p>
+		</div>
+
+	</section>
+	<footer class="main-footer">
+	   <span class="left">
+	   	copyright©2017 luosj.me
+	   </span>
+	   <span class="right">
+	   	技术支持 我本人
+	   </span>  	
+	</footer>
 </body>
 </html>

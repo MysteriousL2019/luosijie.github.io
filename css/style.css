@@ -1,5 +1,7 @@
-body{
-	background-color: #f5f5f5;
+html{
+	font-size: 12px;
+	color: #303030;
+	font-family: STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑";
 }
 
 *{
@@ -9,126 +11,146 @@ body{
 }
 a{
 	text-decoration: none;
+	color: #303030;
 }
 li{
 	list-style: none;
 }
 
-.sidebar{
-	width: 300px;
-	background-color: #46474c;
+header.main-header{
+  position: fixed;
+  display: flex;
+  top: 0;
+  height: 6.6rem;
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  padding: 0 2rem;
+  background-color: white;
+}
+header.main-header ul{
 	height: 100%;
-	position: fixed;
 	display: flex;
-	flex-direction: column;
 	align-items: center;
 }
-.avatar{
-	margin-top: 50px;
-}
-.avatar>img{
-	width: 103px;
-	height: 103px;
-	border-radius: 50%;
-	border:3px solid #3c3d41;
-}
-.avatar>p{
-	font-size: 18px;
-	color: #bebfc0;
-	text-align: center;
-	margin: 25px 0;
-}
-
-ul.menu>li>a{
-	font-size: 16px;
-	color: rgba(255,255,255,0.6);
-	line-height: 50px;
-}
-
-a.active{
-	color: rgba(255,255,255,1)!important;
-}
-
-.contact{
-	margin-top: 50px;
-	margin-left: 20px;
-	color: #858585;
-}
-.contact>p{
-	font-size: 18px;
-	margin-bottom: 10px;
-}
-.contact>ul>li{
-	line-height: 40px;
-}
-.contact>ul>li>i{
-	font-size: 24px;
-	margin-right: 10px;
-	color: #bebfc0;
-}
-.contact>ul>li>a{
-	color: #858585;
-	font-size: 16px;
-}
-
-.main{
-	width: calc(100% - 300px);
-	height: 100%;
-	position: absolute;
-	right: 0;
-}
-.main-title{
-	height: 60px;
-	border-bottom: 1px solid #e0e0e0;
-	line-height: 60px;
-	padding: 0 30px;
-	background-color: white;
-	font-size: 18px;
-	position: fixed;
-	width: 100%;
-}
-.block{
-	width: 4px;
-	height: 14px;
-	background-color: #46474c;
-	display: inline-block;
-}
-
-.main-content{
-	margin-top: 60px;
-}
-.main-content>ul>li{
-	width: 33.3333%;
+header.main-header ul li{
 	float: left;
-	padding: 20px;
-	overflow: hidden;
+	font-size: 1.3rem;
+	width: 7.5rem;
+	cursor: pointer;
+	text-align: center;
 }
-.main-content>ul>li>a{
+header.main-header ul li.resume{
+	position: relative;
+}
+header.main-header ul li.resume:hover:before, header.main-header ul li.resume:hover:after{
 	display: block;
-	color: #232323;
+}
+header.main-header ul li.resume:before{
+	content: "";
+	display: none;
+	border: 0.5rem solid transparent;
+	border-top-color: rgba(0,0,0,0.8);
+	position: absolute;
+	left: 50%;
+	margin-left: -0.5rem;
+	top: -0.3rem;
+}
+header.main-header ul li.resume:after{
+	content: "还没有简历";
+	display: none;
+	position: absolute;
+	font-size: 1rem;
+	background: rgba(0,0,0,0.8);
+	color: white;
+	border-radius: 0.2rem;
+	padding: 0.2rem;
+	width: 5.2rem;
+	left: 50%;
+	margin-left: -2.5rem;
+	top: -2rem;
 }
 
-.item{
-	background: white;
+section{
+	text-align: center;
+	padding: 4rem 0;
+}
+
+section.summary{
+	margin-top: 6.6rem;
+}
+section.summary img{
+	margin: 4rem 0;
+}
+section.summary p{
+	margin: 3.3rem 0;
+	font-size: 1.2rem;
+	line-height: 2rem;
+	color: #656565;
+}
+
+.title{
+	font-size: 1.5rem;
+	margin-bottom: 5.8rem;
+}
+.sub-title{
+	color: #a5a5a5;
+	font-size: 1.2rem;
+}
+.desc{
+	font-size: 1.2rem;
+	color: #656565;
+}
+
+ul.work-list{
 	width: 100%;
-	border: 1px solid #eee;
-	border-radius: 4px;
+	background-color: #f3f3f3;
 	overflow: hidden;
-	padding: 10px;
+	padding: 0.5rem;
+}
+ul.work-list li{
+	float: left;
+	width: 33.333333%;
+}
+ul.work-list li .content{
+	padding: 5.8rem 0;
+	margin: 0.5rem;
+	background: white;
+	transition: all 500ms;
 }
 
-.item>img{
-	width: 100%;
-}
-.item>p{
-	line-height: 50px;
+ul.work-list li .content:hover{
+	box-shadow: 0 0 12px rgba(0,0,0,0.15);
 }
 
-.item .tag span{
-	display: inline-block;
-	border: 1px solid #e0e0e0;
-	padding: 3px 8px;
-	border-radius: 4px;
-	margin-bottom: 5px;
-	background: #f8f8f8;
+ul.work-list li .content img{
+	margin-bottom: 2.8rem;
+}
+ul.work-list li .content p{
+	margin-top: 1.2rem;
+}
+section.contact em{
+	font-size: 3rem;
+	color: #656565;
+}
+section.contact .context{
+	padding: 10rem 0 15rem;
+}
+section.contact .context p{
+	font-size: 1.6rem;
+	color: #a5a5a5;
+	margin-top: 2.5rem;
+}
+
+footer.main-footer{
+	text-align: center;
+	border-top: 1px solid #eee;
+	line-height: 5rem;
+	font-size: 1.2rem;
+	color: #acacac;
+}
+footer.main-footer span{
+	margin: 0 1rem;
 }
