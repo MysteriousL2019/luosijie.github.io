@@ -1,9 +1,11 @@
 html{
-	font-size: 12px;
+	font-size: 16px;
 	color: #303030;
 	font-family: STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑";
 }
-
+body{
+	position: relative;
+}
 *{
 	box-sizing: border-box;
 	padding: 0;
@@ -21,13 +23,13 @@ header.main-header{
   position: fixed;
   display: flex;
   top: 0;
-  height: 6.6rem;
+  height: 5rem;
   width: 100%;
   border-bottom: 1px solid #eee;
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
-  padding: 0 2rem;
+  padding: 0 1.4rem;
   background-color: white;
 }
 header.main-header ul{
@@ -37,8 +39,8 @@ header.main-header ul{
 }
 header.main-header ul li{
 	float: left;
-	font-size: 1.3rem;
-	width: 7.5rem;
+	font-size: 1.1rem;
+	width: 7rem;
 	cursor: pointer;
 	text-align: center;
 }
@@ -51,26 +53,26 @@ header.main-header ul li.resume:hover:before, header.main-header ul li.resume:ho
 header.main-header ul li.resume:before{
 	content: "";
 	display: none;
-	border: 0.5rem solid transparent;
+	border: 0.3rem solid transparent;
 	border-top-color: rgba(0,0,0,0.8);
 	position: absolute;
 	left: 50%;
-	margin-left: -0.5rem;
-	top: -0.3rem;
+	margin-left: -0.3rem;
+	top: -0.15rem;
 }
 header.main-header ul li.resume:after{
 	content: "还没有简历";
 	display: none;
 	position: absolute;
-	font-size: 1rem;
+	font-size: 0.8rem;
 	background: rgba(0,0,0,0.8);
 	color: white;
 	border-radius: 0.2rem;
-	padding: 0.2rem;
+	padding: 0.1rem;
 	width: 5.2rem;
 	left: 50%;
-	margin-left: -2.5rem;
-	top: -2rem;
+	margin-left: -2.6rem;
+	top: -1.4rem;
 }
 
 section{
@@ -86,7 +88,6 @@ section.summary img{
 }
 section.summary p{
 	margin: 3.3rem 0;
-	font-size: 1.2rem;
 	line-height: 2rem;
 	color: #656565;
 }
@@ -97,10 +98,9 @@ section.summary p{
 }
 .sub-title{
 	color: #a5a5a5;
-	font-size: 1.2rem;
+	font-size: 1rem;
 }
 .desc{
-	font-size: 1.2rem;
 	color: #656565;
 }
 
@@ -129,7 +129,7 @@ ul.work-list li .content img{
 	margin-bottom: 2.8rem;
 }
 ul.work-list li .content p{
-	margin-top: 1.2rem;
+
 }
 section.contact em{
 	font-size: 3rem;
@@ -147,8 +147,7 @@ section.contact .context p{
 footer.main-footer{
 	text-align: center;
 	border-top: 1px solid #eee;
-	line-height: 5rem;
-	font-size: 1.2rem;
+	line-height: 4rem;
 	color: #acacac;
 }
 footer.main-footer span{
