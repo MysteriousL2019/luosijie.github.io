@@ -10,9 +10,9 @@
 	<header class="main-header">
 		<img src="img/logo.png" alt="骆" width="50" height="50">
 		<ul class="menu">
-			<li><a href="#summary">首页</a></li>
-			<li><a href="#works">作品</a></li>
-			<li><a href="#contact">联系</a></li>
+			<li data-pos="80">首页</li>
+			<li data-pos="800">作品</li>
+			<li data-pos="1400">联系</li>
 			<li class="resume">简历</li>
 			<div class="slide-block"></div>
 		</ul>
@@ -90,8 +90,15 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script>
 	  window.onload = function(){
-	  	console.log(10);
-	    $(document).scrollTop(1000);
+	  	
+	  	$('ul.menu li').each(function(){
+	  		var pos = $(this).attr('data-pos');
+	  		$(this).click(function(){
+	  			$('body, html').animate({
+	  				scrollTop: pos
+	  			}, 1000)
+	  		})
+	  	})
 	  }
 	</script>
 </body>
