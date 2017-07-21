@@ -61,7 +61,7 @@ header.main-header ul li.resume:before{
 	top: -0.15rem;
 }
 header.main-header ul li.resume:after{
-	content: "还没有简历";
+	content: "简历未开放";
 	display: none;
 	position: absolute;
 	font-size: 0.8rem;
@@ -137,13 +137,17 @@ section.contact em{
 }
 section.contact .context{
 	padding: 10rem 0 15rem;
+	display: flex;
+	justify-content: center;
+}
+section.contact .context>div{
+	margin: 15px 90px;
 }
 section.contact .context p{
 	font-size: 1.6rem;
 	color: #a5a5a5;
 	margin-top: 2.5rem;
 }
-
 footer.main-footer{
 	text-align: center;
 	border-top: 1px solid #eee;
