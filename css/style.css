@@ -148,6 +148,9 @@ section.contact .context p{
 	color: #a5a5a5;
 	margin-top: 2.5rem;
 }
+section.contact .context p a{
+	color: inherit;
+}
 footer.main-footer{
 	text-align: center;
 	border-top: 1px solid #eee;
